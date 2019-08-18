@@ -509,4 +509,42 @@ Wire Wire Line
 Connection ~ 7350 2050
 Wire Wire Line
 	7350 2050 7350 2200
+$Comp
+L Connector:Conn_01x04_Female J?
+U 1 1 5D730F79
+P 2000 1650
+F 0 "J?" H 1892 1935 50  0000 C CNN
+F 1 "Light Detection" H 1892 1844 50  0000 C CNN
+F 2 "" H 2000 1650 50  0001 C CNN
+F 3 "~" H 2000 1650 50  0001 C CNN
+	1    2000 1650
+	-1   0    0    -1  
+$EndComp
+Text GLabel 2450 1650 2    50   Output ~ 0
+Right_LDR
+Text GLabel 2450 1750 2    50   Output ~ 0
+Middle_LDR
+Text GLabel 2450 1850 2    50   Output ~ 0
+Left_LDR
+$Comp
+L power:GND #PWR?
+U 1 1 5D7449E2
+P 3100 2000
+F 0 "#PWR?" H 3100 1750 50  0001 C CNN
+F 1 "GND" H 3105 1827 50  0000 C CNN
+F 2 "" H 3100 2000 50  0001 C CNN
+F 3 "" H 3100 2000 50  0001 C CNN
+	1    3100 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 2000 3100 1550
+Wire Wire Line
+	3100 1550 2200 1550
+Wire Wire Line
+	2200 1650 2450 1650
+Wire Wire Line
+	2450 1750 2200 1750
+Wire Wire Line
+	2200 1850 2450 1850
 $EndSCHEMATC
