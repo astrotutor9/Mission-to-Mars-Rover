@@ -1,4 +1,5 @@
 EESchema Schematic File Version 4
+LIBS:M2MRover-cache
 EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
@@ -14,10 +15,10 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L MCU_Module:Arduino_Nano_v3.x A?
+L MCU_Module:Arduino_Nano_v3.x A1
 U 1 1 5D594B89
 P 5800 3750
-F 0 "A?" H 5800 2661 50  0000 C CNN
+F 0 "A1" H 5800 2661 50  0000 C CNN
 F 1 "Arduino_Nano_v3.x" H 5800 2570 50  0000 C CNN
 F 2 "Module:Arduino_Nano" H 5950 2800 50  0001 L CNN
 F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 5800 2750 50  0001 C CNN
@@ -88,10 +89,10 @@ Wire Wire Line
 Wire Wire Line
 	2850 3250 2850 3350
 $Comp
-L Connector:Conn_01x03_Male J?
+L Connector:Conn_01x03_Male J3
 U 1 1 5D5A7D2E
 P 2100 4350
-F 0 "J?" H 2208 4631 50  0000 C CNN
+F 0 "J3" H 2208 4631 50  0000 C CNN
 F 1 "Servo" H 2208 4540 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 2100 4350 50  0001 C CNN
 F 3 "~" H 2100 4350 50  0001 C CNN
@@ -99,10 +100,10 @@ F 3 "~" H 2100 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x04_Male J?
+L Connector:Conn_01x04_Male J2
 U 1 1 5D5A8825
 P 2100 3050
-F 0 "J?" H 2208 3331 50  0000 C CNN
+F 0 "J2" H 2208 3331 50  0000 C CNN
 F 1 "Serial (Bluetooth)" H 2208 3240 50  0000 C CNN
 F 2 "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical" H 2100 3050 50  0001 C CNN
 F 3 "~" H 2100 3050 50  0001 C CNN
@@ -140,10 +141,10 @@ Wire Wire Line
 Wire Wire Line
 	2800 4250 2300 4250
 $Comp
-L Connector:Conn_01x04_Female J?
+L Connector:Conn_01x04_Female J7
 U 1 1 5D5B1217
 P 8950 3250
-F 0 "J?" H 8978 3226 50  0000 L CNN
+F 0 "J7" H 8978 3226 50  0000 L CNN
 F 1 "Compass GY-273" H 8978 3135 50  0000 L CNN
 F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 8950 3250 50  0001 C CNN
 F 3 "~" H 8950 3250 50  0001 C CNN
@@ -313,21 +314,21 @@ Wire Wire Line
 Wire Wire Line
 	6300 3750 6650 3750
 $Comp
-L Connector:Conn_01x08_Male J?
+L Connector:Conn_01x08_Male J4
 U 1 1 5D68405E
 P 2350 6000
-F 0 "J?" H 2458 6481 50  0000 C CNN
+F 0 "J4" H 2458 6481 50  0000 C CNN
 F 1 "H-Bridge" H 2458 6390 50  0000 C CNN
-F 2 "" H 2350 6000 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical" H 2350 6000 50  0001 C CNN
 F 3 "~" H 2350 6000 50  0001 C CNN
 	1    2350 6000
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0109
 U 1 1 5D68DE60
 P 2900 5400
-F 0 "#PWR?" H 2900 5250 50  0001 C CNN
+F 0 "#PWR0109" H 2900 5250 50  0001 C CNN
 F 1 "+5V" H 2915 5573 50  0000 C CNN
 F 2 "" H 2900 5400 50  0001 C CNN
 F 3 "" H 2900 5400 50  0001 C CNN
@@ -335,10 +336,10 @@ F 3 "" H 2900 5400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0110
 U 1 1 5D691CCF
 P 3150 5950
-F 0 "#PWR?" H 3150 5700 50  0001 C CNN
+F 0 "#PWR0110" H 3150 5700 50  0001 C CNN
 F 1 "GND" H 3155 5777 50  0000 C CNN
 F 2 "" H 3150 5950 50  0001 C CNN
 F 3 "" H 3150 5950 50  0001 C CNN
@@ -354,32 +355,32 @@ Wire Wire Line
 Wire Wire Line
 	3150 5700 3150 5950
 $Comp
-L Connector:Conn_01x04_Female J?
+L Connector:Conn_01x04_Female J8
 U 1 1 5D69DEA8
 P 9050 4650
-F 0 "J?" H 9078 4626 50  0000 L CNN
+F 0 "J8" H 9078 4626 50  0000 L CNN
 F 1 "Left Hall" H 9078 4535 50  0000 L CNN
-F 2 "" H 9050 4650 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 9050 4650 50  0001 C CNN
 F 3 "~" H 9050 4650 50  0001 C CNN
 	1    9050 4650
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x04_Female J?
+L Connector:Conn_01x04_Female J9
 U 1 1 5D69E9BA
 P 9050 5300
-F 0 "J?" H 9078 5276 50  0000 L CNN
+F 0 "J9" H 9078 5276 50  0000 L CNN
 F 1 "Right Hall" H 9078 5185 50  0000 L CNN
-F 2 "" H 9050 5300 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 9050 5300 50  0001 C CNN
 F 3 "~" H 9050 5300 50  0001 C CNN
 	1    9050 5300
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0111
 U 1 1 5D69F1A3
 P 7900 4400
-F 0 "#PWR?" H 7900 4250 50  0001 C CNN
+F 0 "#PWR0111" H 7900 4250 50  0001 C CNN
 F 1 "+5V" H 7915 4573 50  0000 C CNN
 F 2 "" H 7900 4400 50  0001 C CNN
 F 3 "" H 7900 4400 50  0001 C CNN
@@ -387,10 +388,10 @@ F 3 "" H 7900 4400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0112
 U 1 1 5D69F697
 P 8000 5600
-F 0 "#PWR?" H 8000 5350 50  0001 C CNN
+F 0 "#PWR0112" H 8000 5350 50  0001 C CNN
 F 1 "GND" H 8005 5427 50  0000 C CNN
 F 2 "" H 8000 5600 50  0001 C CNN
 F 3 "" H 8000 5600 50  0001 C CNN
@@ -432,23 +433,23 @@ Wire Wire Line
 Wire Wire Line
 	8550 5500 8850 5500
 $Comp
-L Connector:Conn_01x04_Female J?
+L Connector:Conn_01x04_Female J5
 U 1 1 5D6DD620
 P 8950 1250
-F 0 "J?" H 8978 1226 50  0000 L CNN
+F 0 "J5" H 8978 1226 50  0000 L CNN
 F 1 "Ultrasonic Down" H 8978 1135 50  0000 L CNN
-F 2 "" H 8950 1250 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 8950 1250 50  0001 C CNN
 F 3 "~" H 8950 1250 50  0001 C CNN
 	1    8950 1250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Conn_01x04_Female J?
+L Connector:Conn_01x04_Female J6
 U 1 1 5D6DDAA8
 P 8950 1850
-F 0 "J?" H 8978 1826 50  0000 L CNN
+F 0 "J6" H 8978 1826 50  0000 L CNN
 F 1 "Ultrasonic Forward" H 8978 1735 50  0000 L CNN
-F 2 "" H 8950 1850 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 8950 1850 50  0001 C CNN
 F 3 "~" H 8950 1850 50  0001 C CNN
 	1    8950 1850
 	1    0    0    -1  
@@ -462,10 +463,10 @@ Ultrasonic_Forward_Trigger
 Text GLabel 8600 1850 0    50   Input ~ 0
 Ultrasonic_Forward_Echo
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR0113
 U 1 1 5D6E7CA7
 P 7450 950
-F 0 "#PWR?" H 7450 800 50  0001 C CNN
+F 0 "#PWR0113" H 7450 800 50  0001 C CNN
 F 1 "+5V" H 7465 1123 50  0000 C CNN
 F 2 "" H 7450 950 50  0001 C CNN
 F 3 "" H 7450 950 50  0001 C CNN
@@ -490,10 +491,10 @@ Wire Wire Line
 Wire Wire Line
 	8750 1850 8600 1850
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0114
 U 1 1 5D6F22C6
 P 7350 2200
-F 0 "#PWR?" H 7350 1950 50  0001 C CNN
+F 0 "#PWR0114" H 7350 1950 50  0001 C CNN
 F 1 "GND" H 7355 2027 50  0000 C CNN
 F 2 "" H 7350 2200 50  0001 C CNN
 F 3 "" H 7350 2200 50  0001 C CNN
@@ -510,12 +511,12 @@ Connection ~ 7350 2050
 Wire Wire Line
 	7350 2050 7350 2200
 $Comp
-L Connector:Conn_01x04_Female J?
+L Connector:Conn_01x04_Female J1
 U 1 1 5D730F79
 P 2000 1650
-F 0 "J?" H 1892 1935 50  0000 C CNN
+F 0 "J1" H 1892 1935 50  0000 C CNN
 F 1 "Light Detection" H 1892 1844 50  0000 C CNN
-F 2 "" H 2000 1650 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 2000 1650 50  0001 C CNN
 F 3 "~" H 2000 1650 50  0001 C CNN
 	1    2000 1650
 	-1   0    0    -1  
@@ -527,10 +528,10 @@ Middle_LDR
 Text GLabel 2450 1850 2    50   Output ~ 0
 Left_LDR
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0115
 U 1 1 5D7449E2
 P 3100 2000
-F 0 "#PWR?" H 3100 1750 50  0001 C CNN
+F 0 "#PWR0115" H 3100 1750 50  0001 C CNN
 F 1 "GND" H 3105 1827 50  0000 C CNN
 F 2 "" H 3100 2000 50  0001 C CNN
 F 3 "" H 3100 2000 50  0001 C CNN
