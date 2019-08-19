@@ -1,0 +1,3 @@
+[submodule "KiCad/Libraries/kicad_microbit_connector"]
+	path = KiCad/Libraries/kicad_microbit_connector
+	url = git@github.com:anthonykirby/kicad_microbit_connector.git
