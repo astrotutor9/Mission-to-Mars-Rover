@@ -1,4 +1,7 @@
-# Mission to Mars Rover Schematic & PCB Design
+# Mission to Mars Rover build instructions
 
-KiCad Schematic & PCB Design for the Software Cornwall
-Mission to Mars rovers.
+## Schematic & PCB design
+
+The `KiCad` directory contains the Schematic & PCB design
+files creating using [KiCad EDA](http://www.kicad-pcb.org/)
+tool.
