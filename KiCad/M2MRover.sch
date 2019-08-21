@@ -730,35 +730,22 @@ Wire Wire Line
 	4500 3150 4500 3300
 Wire Wire Line
 	4500 3300 4250 3300
-Text GLabel 4400 3800 2    50   Output ~ 0
-IN1
 Text GLabel 4400 3700 2    50   Output ~ 0
+IN1
+Text GLabel 4400 3800 2    50   Output ~ 0
 IN2
-Text GLabel 4400 3600 2    50   Output ~ 0
-IN3
 Text GLabel 4400 3500 2    50   Output ~ 0
+IN3
+Text GLabel 4400 4700 2    50   Output ~ 0
 IN4
-Text GLabel 4400 4000 2    50   Output ~ 0
-ENA
 Text GLabel 4400 4900 2    50   Output ~ 0
+ENA
+Text GLabel 4400 4000 2    50   Output ~ 0
 ENB
-Wire Wire Line
-	4250 4900 4400 4900
-Wire Wire Line
-	4250 4000 4400 4000
-Wire Wire Line
-	4000 3800 4400 3800
-Wire Wire Line
-	4000 3700 4400 3700
-Wire Wire Line
-	4000 3600 4400 3600
-Wire Wire Line
-	4000 3500 4400 3500
 NoConn ~ 4000 4300
 NoConn ~ 4000 4400
 NoConn ~ 4000 4500
 NoConn ~ 4000 4600
-NoConn ~ 4000 4700
 NoConn ~ 4000 5200
 NoConn ~ 4000 5300
 NoConn ~ 4000 5400
@@ -898,10 +885,10 @@ Wire Wire Line
 Wire Wire Line
 	9150 5250 9150 5900
 $Comp
-L Regulator_Linear:LM1117-3.3 U?
+L Regulator_Linear:LM1117-3.3 U1
 U 1 1 5D5D0567
 P 6000 1550
-F 0 "U?" H 6000 1792 50  0000 C CNN
+F 0 "U1" H 6000 1792 50  0000 C CNN
 F 1 "LM1117-3.3" H 6000 1701 50  0000 C CNN
 F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6000 1550 50  0001 C CNN
 F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 6000 1550 50  0001 C CNN
@@ -909,10 +896,10 @@ F 3 "http://www.ti.com/lit/ds/symlink/lm1117.pdf" H 6000 1550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR06
 U 1 1 5D5DDFD0
 P 5500 1400
-F 0 "#PWR?" H 5500 1250 50  0001 C CNN
+F 0 "#PWR06" H 5500 1250 50  0001 C CNN
 F 1 "+5V" H 5515 1573 50  0000 C CNN
 F 2 "" H 5500 1400 50  0001 C CNN
 F 3 "" H 5500 1400 50  0001 C CNN
@@ -920,10 +907,10 @@ F 3 "" H 5500 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+3.3V #PWR?
+L power:+3.3V #PWR08
 U 1 1 5D5DE8F7
 P 6500 1400
-F 0 "#PWR?" H 6500 1250 50  0001 C CNN
+F 0 "#PWR08" H 6500 1250 50  0001 C CNN
 F 1 "+3.3V" H 6515 1573 50  0000 C CNN
 F 2 "" H 6500 1400 50  0001 C CNN
 F 3 "" H 6500 1400 50  0001 C CNN
@@ -931,10 +918,10 @@ F 3 "" H 6500 1400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR07
 U 1 1 5D5DF372
 P 6000 1950
-F 0 "#PWR?" H 6000 1700 50  0001 C CNN
+F 0 "#PWR07" H 6000 1700 50  0001 C CNN
 F 1 "GND" H 6005 1777 50  0000 C CNN
 F 2 "" H 6000 1950 50  0001 C CNN
 F 3 "" H 6000 1950 50  0001 C CNN
@@ -951,4 +938,17 @@ Wire Wire Line
 	6500 1550 6500 1400
 Wire Wire Line
 	6000 1850 6000 1950
+Wire Wire Line
+	4000 3500 4400 3500
+Wire Wire Line
+	4000 3700 4400 3700
+Wire Wire Line
+	4000 3800 4400 3800
+Wire Wire Line
+	4250 4000 4400 4000
+Wire Wire Line
+	4000 4700 4400 4700
+Wire Wire Line
+	4250 4900 4400 4900
+NoConn ~ 4000 3600
 $EndSCHEMATC
